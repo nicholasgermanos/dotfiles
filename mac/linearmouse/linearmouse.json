@@ -1,0 +1,88 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.2",
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x90",
+          "productName" : "Razer Naga Pro",
+          "serialNumber" : "000000000000",
+          "vendorID" : "0x1532"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.3156,
+        "disableAcceleration" : false,
+        "speed" : 0.2465
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "reverse" : {
+          "vertical" : false
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x8f",
+          "productName" : "Razer Naga Pro",
+          "serialNumber" : "000000000000",
+          "vendorID" : "0x1532"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.49
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "horizontal" : 2,
+          "vertical" : 1.57
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "reverse" : false,
+        "speed" : {
+          "horizontal" : 128,
+          "vertical" : 45.81
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x92",
+          "productName" : "Naga Pro",
+          "vendorID" : "0x1532"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.49
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "horizontal" : 2,
+          "vertical" : 1.57
+        },
+        "speed" : {
+          "horizontal" : 128,
+          "vertical" : 45.81
+        }
+      }
+    }
+  ]
+}
