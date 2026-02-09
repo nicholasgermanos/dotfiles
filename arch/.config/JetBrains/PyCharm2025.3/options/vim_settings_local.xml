@@ -1,0 +1,101 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">LA==</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64">cQ==</entry>
+      </history-cmd>
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="e-ink-dashboard-683fc3b9">
+      <jump line="74" column="4" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="27" column="24" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="621" column="10" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="101" column="4" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="104" column="0" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="109" column="0" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="63" column="26" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="637" column="14" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="0" column="1196" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/output.txt" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="60" column="23" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+      <jump line="0" column="0" filename="/run/media/ironick/disk/snake.py" protocol="file" />
+      <jump line="121" column="20" filename="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" protocol="file" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="/run/media/ironick/disk/snake.py" timestamp="1769944206526">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/developer/e-ink-dashboard/image-processing/output.txt" timestamp="1767504114646">
+        <mark key="&quot;" line="0" column="1196" />
+      </file>
+      <file name="$USER_HOME$/developer/e-ink-dashboard/image-processing/app.py" timestamp="1767504073048">
+        <mark key="'" line="63" column="26" />
+        <mark key="[" line="637" column="11" />
+        <mark key="]" line="637" column="7" />
+        <mark key="." line="637" column="6" />
+        <mark key="^" line="637" column="7" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">cHJpbnQoIkhlbGxvIHdvcmxkIikK</text>
+      </register>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">cHJpbnQoIkhlbGxvIHdvcmxkIikK</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">Y29udmVydF9yZWRfYmluYXJ5KCkK</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">Y29udmVydF9yZWRfYmluYXJ5KCkK</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="9" type="LINE_WISE">
+        <text encoding="base64">ZGVkZGYK</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64" />
+      </register>
+      <register name="/" type="CHARACTER_WISE">
+        <text encoding="base64">LA==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-search encoding="base64">LA==</last-search>
+      <last-offset encoding="base64" />
+      <last-pattern encoding="base64">LA==</last-pattern>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

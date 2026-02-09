@@ -1,0 +1,7 @@
+# GIMP gimp-fuzzy-select-tool options
+
+(feather yes)
+(feather-radius 41)
+(select-criterion rgb-red)
+
+# end of gimp-fuzzy-select-tool options

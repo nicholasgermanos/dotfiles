@@ -1,0 +1,96 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "menus.clock.time.military": true,
+  "menus.clock.weather.unit": "metric",
+  "theme.bar.floating": false,
+  "theme.bar.location": "top",
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.border.location": "bottom",
+  "theme.bar.border.width": "0.05em",
+  "menus.clock.weather.location": "Sydney",
+  "theme.bar.enableShadow": false,
+  "theme.bar.buttons.dashboard.enableBorder": false,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.workspaceMask": false,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.applicationIconOncePerWorkspace": false,
+  "bar.workspaces.numbered_active_indicator": "color",
+  "theme.bar.buttons.workspaces.smartHighlight": true,
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "bar.windowtitle.custom_title": true,
+  "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
+  "menus.power.showLabel": true,
+  "menus.clock.time.hideSeconds": false,
+  "theme.font.name": "Inconsolata",
+  "theme.font.label": "Inconsolata",
+  "bar.layouts": {
+    "HDMI-A-2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "custom/toggle-right-monitor",
+        "volume",
+        "network",
+        "bluetooth",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    },
+    "HDMI-A-1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "custom/toggle-right-monitor",
+        "volume",
+        "network",
+        "bluetooth",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.font.weight": 700,
+  "bar.autoHide": "fullscreen",
+  "bar.network.label": true,
+  "bar.network.showWifiInfo": true,
+  "bar.network.truncation": false,
+  "theme.bar.buttons.bluetooth.enableBorder": false,
+  "theme.bar.buttons.systray.enableBorder": false,
+  "bar.clock.format": "%a %b %d  %H:%M:%S %p",
+  "bar.clock.showTime": true,
+  "bar.clock.showIcon": true,
+  "theme.bar.menus.opacity": 100,
+  "theme.bar.transparent": false,
+  "theme.bar.opacity": 90,
+  "theme.bar.buttons.opacity": 100,
+  "theme.bar.buttons.background_opacity": 85,
+  "theme.bar.buttons.monochrome": false,
+  "bar.workspaces.applicationIconMap": {
+    "[dD]iscord": "󰙯",
+    "title:YouTube": "",
+    "class:wezterm$": ""
+  },
+  "bar.workspaces.applicationIconEmptyWorkspace": "",
+  "bar.workspaces.monitorSpecific": true,
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "bar.workspaces.showAllActive": true,
+  "notifications.position": "top right"
+}

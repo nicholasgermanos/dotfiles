@@ -1,0 +1,9 @@
+{
+	"custom/toggle-right-monitor": {
+		"icon": "󰍹",
+		"tooltip": "Toggle Right Monitor", 
+		"actions": {
+			"onLeftClick": "cd ~/.config/hypr; python3 toggle_right_monitor.py"
+		}
+	}
+}

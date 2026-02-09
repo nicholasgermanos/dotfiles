@@ -1,0 +1,20 @@
+<application>
+  <component name="ApplicationUserFactors">
+    <factor id="completionFinishedType">
+      <dailyData date="04-01-2026">
+        <observation name="cancelled" value="13.0" />
+      </dailyData>
+    </factor>
+    <factor id="completionUsage">
+      <dailyData date="04-01-2026">
+        <observation name="count" value="13.0" />
+      </dailyData>
+    </factor>
+    <factor id="timeBetweenTyping">
+      <dailyData date="04-01-2026">
+        <observation name="average" value="33.5" />
+        <observation name="count" value="2.0" />
+      </dailyData>
+    </factor>
+  </component>
+</application>

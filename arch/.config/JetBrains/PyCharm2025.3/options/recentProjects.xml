@@ -1,0 +1,41 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/PyCharmMiscProject">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Welcome – What's New in PyCharm" projectWorkspaceId="37mLylg8HKO4uu5FRvZQbQFgANy">
+              <option name="activationTimestamp" value="1767503672288" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-253.29346.142" />
+              <option name="buildTimestamp" value="1766037960000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <frame x="3847" y="751" width="1266" height="682" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1767503559587" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/developer/e-ink-dashboard">
+          <value>
+            <RecentProjectMetaInfo frameTitle="e-ink-dashboard – app.py" opened="true" projectWorkspaceId="37mMDmxnOvrW5gXNNrckRdTbH0w">
+              <option name="activationTimestamp" value="1769944896752" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-253.29346.142" />
+              <option name="buildTimestamp" value="1766037960000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="7" y="55" width="2546" height="1378" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1767503675343" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/developer/e-ink-dashboard" />
+  </component>
+</application>

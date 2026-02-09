@@ -1,0 +1,6 @@
+2026/02/01-14:27:59.920 1086f Creating DB /home/ironick/.config/google-chrome/Default/IndexedDB/https_medium.com_0.indexeddb.leveldb since it was missing.
+2026/02/01-14:27:59.925 1086f Reusing MANIFEST /home/ironick/.config/google-chrome/Default/IndexedDB/https_medium.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/01-14:28:07.928 10870 Level-0 table #5: started
+2026/02/01-14:28:07.931 10870 Level-0 table #5: 9745 bytes OK
+2026/02/01-14:28:07.933 10870 Delete type=0 #3
+2026/02/01-14:28:07.933 10870 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

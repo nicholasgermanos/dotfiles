@@ -1,0 +1,35 @@
+<application>
+  <component name="AcceptanceRateFactors">
+    <option name="lastShowUpTime" value="1767503909741" />
+    <showUpCounts>
+      <entry key="1" value="1.0" />
+      <entry key="24" value="1.0" />
+      <entry key="168" value="1.0" />
+    </showUpCounts>
+  </component>
+  <component name="CompletionFinishedType">
+    <dailyDataMap>
+      <entry key="2026-01-04">
+        <DailyData>
+          <option name="explicitCancel" value="1" />
+        </DailyData>
+      </entry>
+    </dailyDataMap>
+  </component>
+  <component name="TimeBetweenTyping">
+    <dailyDataMap>
+      <entry key="2026-01-04">
+        <DailyData>
+          <option name="count" value="166" />
+          <option name="totalTime" value="122700" />
+        </DailyData>
+      </entry>
+      <entry key="2026-02-01">
+        <DailyData>
+          <option name="count" value="2" />
+          <option name="totalTime" value="784" />
+        </DailyData>
+      </entry>
+    </dailyDataMap>
+  </component>
+</application>

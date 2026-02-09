@@ -1,0 +1,287 @@
+16:40:59.140 [MainThread] INFO    thonny: Thonny version: 4.1.7
+16:40:59.140 [MainThread] INFO    thonny: cwd: /home/ironick
+16:40:59.140 [MainThread] INFO    thonny: original argv: ['/home/ironick/.pyenv/versions/3.11.14/bin/python3.11', '-s', '-u', '-B', '/home/ironick/.pyenv/versions/3.11.14/lib/python3.11/site-packages/thonny/plugins/rp2040/rp2040_back.py', "{'clean': True, 'port': '/dev/ttyACM0', 'dtr': None, 'rts': None, 'submit_mode': 'raw_paste', 'interrupt_on_connect': True, 'write_block_size': 64, 'write_block_delay': None, 'proxy_class': 'RaspberryPiPicoBackendProxy', 'sync_time': True, 'validate_time': False, 'local_rtc': True}"]
+16:40:59.140 [MainThread] INFO    thonny: sys.executable: /home/ironick/.pyenv/versions/3.11.14/bin/python3.11
+16:40:59.140 [MainThread] INFO    thonny: sys.argv: ['/home/ironick/.pyenv/versions/3.11.14/lib/python3.11/site-packages/thonny/plugins/rp2040/rp2040_back.py', "{'clean': True, 'port': '/dev/ttyACM0', 'dtr': None, 'rts': None, 'submit_mode': 'raw_paste', 'interrupt_on_connect': True, 'write_block_size': 64, 'write_block_delay': None, 'proxy_class': 'RaspberryPiPicoBackendProxy', 'sync_time': True, 'validate_time': False, 'local_rtc': True}"]
+16:40:59.140 [MainThread] INFO    thonny: sys.path: ['/home/ironick/.pyenv/versions/3.11.14/lib/python3.11/site-packages/thonny/plugins/rp2040', '/home/ironick/.pyenv/versions/3.11.14/lib/python311.zip', '/home/ironick/.pyenv/versions/3.11.14/lib/python3.11', '/home/ironick/.pyenv/versions/3.11.14/lib/python3.11/lib-dynload', '/home/ironick/.pyenv/versions/3.11.14/lib/python3.11/site-packages']
+16:40:59.140 [MainThread] INFO    thonny: sys.flags: sys.flags(debug=0, inspect=0, interactive=0, optimize=0, dont_write_bytecode=1, no_user_site=1, no_site=0, ignore_environment=0, verbose=0, bytes_warning=0, quiet=0, hash_randomization=1, isolated=0, dev_mode=False, utf8_mode=0, warn_default_encoding=0, safe_path=False, int_max_str_digits=-1)
+16:40:59.141 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Starting backend, args: {'clean': True, 'port': '/dev/ttyACM0', 'dtr': None, 'rts': None, 'submit_mode': 'raw_paste', 'interrupt_on_connect': True, 'write_block_size': 64, 'write_block_delay': None, 'proxy_class': 'RaspberryPiPicoBackendProxy', 'sync_time': True, 'validate_time': False, 'local_rtc': True}
+16:40:59.142 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Initial submit_mode: raw_paste, write_block_size: 64, write_block_delay: 0, read_block_size: 0
+16:40:59.142 [MainThread] INFO    thonny.plugins.micropython.mp_back: Initializing MicroPythonBackend of type RP2040Backend
+16:40:59.143 [MainThread] INFO    thonny: TIME/MODS 0.032 before prepare (+75 modules)
+16:40:59.143 [MainThread] INFO    thonny: NEW MODS ['__future__', '_bz2', '_compression', '_datetime', '_heapq', '_locale', '_lzma', '_posixsubprocess', '_queue', '_struct', '_tkinter', 'array', 'binascii', 'bz2', 'datetime', 'encodings.ascii', 'errno', 'faulthandler', 'fcntl', 'fnmatch', 'gettext', 'heapq', 'ipaddress', 'locale', 'lzma', 'math', 'ntpath', 'pathlib', 'platform', 'queue', 'select', 'selectors', 'serial', 'serial.serialposix', 'serial.serialutil', 'shlex', 'shutil', 'signal', 'struct', 'subprocess', 'termios', 'thonny.backend', 'thonny.base_file_browser', 'thonny.codeview', 'thonny.config_ui', 'thonny.editors', 'thonny.languages', 'thonny.misc_utils', 'thonny.plugins', 'thonny.plugins.backend_config_page', 'thonny.plugins.micropython', 'thonny.plugins.micropython.bare_metal_backend', 'thonny.plugins.micropython.connection', 'thonny.plugins.micropython.mp_back', 'thonny.plugins.micropython.mp_common', 'thonny.plugins.micropython.mp_front', 'thonny.plugins.micropython.serial_connection', 'thonny.plugins.micropython.webrepl_connection', 'thonny.roughparse', 'thonny.running', 'thonny.tktextext', 'thonny.ui_utils', 'thonny.workdlg', 'tkinter', 'tkinter.commondialog', 'tkinter.constants', 'tkinter.dialog', 'tkinter.filedialog', 'tkinter.font', 'tkinter.messagebox', 'tkinter.simpledialog', 'tkinter.ttk', 'urllib', 'urllib.parse', 'zlib']
+16:40:59.143 [MainThread] INFO    thonny.plugins.micropython.mp_back: Sending interrupt
+16:40:59.143 [MainThread] INFO    thonny.plugins.micropython.mp_back: Done sending interrupt
+16:40:59.188 [MainThread] INFO    thonny: TIME/MODS 0.046 got welcome 
+16:40:59.188 [MainThread] INFO    thonny: TIME/MODS 0.000 bef preparing helpers 
+16:40:59.188 [MainThread] INFO    thonny.plugins.micropython.mp_back: Preparing helpers
+16:40:59.189 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:40:59.189 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Requesting raw mode at b'>>> '
+16:40:59.189 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Discarding stdout: '\r\n'
+16:40:59.199 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Discarding stdout: ''
+16:40:59.199 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Entered raw prompt
+16:40:59.222 [MainThread] INFO    thonny: TIME/MODS 0.033 affsubcode 
+16:40:59.237 [MainThread] INFO    thonny: TIME/MODS 0.015 affforw 
+16:40:59.237 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared helpers 
+16:40:59.237 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:40:59.239 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:40:59.251 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:40:59.251 [MainThread] INFO    thonny: TIME/MODS 0.000 got cwd 
+16:40:59.251 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:40:59.252 [MainThread] INFO    thonny: TIME/MODS 0.001 affsubcode 
+16:40:59.264 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:40:59.264 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared 
+16:40:59.264 [MainThread] INFO    thonny.plugins.micropython.mp_back: Prepared
+16:40:59.264 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:40:59.265 [MainThread] INFO    thonny: TIME/MODS 0.001 affsubcode 
+16:40:59.285 [MainThread] INFO    thonny: TIME/MODS 0.020 affforw 
+16:40:59.285 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:40:59.290 [MainThread] INFO    thonny: TIME/MODS 0.005 affsubcode 
+16:40:59.307 [MainThread] INFO    thonny: TIME/MODS 0.017 affforw 
+16:40:59.308 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:40:59.317 [MainThread] INFO    thonny: TIME/MODS 0.009 affsubcode 
+16:40:59.332 [MainThread] INFO    thonny: TIME/MODS 0.016 affforw 
+16:40:59.332 [MainThread] INFO    thonny.backend: Loading Jedi
+16:40:59.332 [MainThread] INFO    thonny: TIME/MODS 0.000 Before loading Jedi 
+16:40:59.332 [MainThread] INFO    thonny.common: Using THONNY_FRONTEND_SYS_PATH ['/home/ironick/.pyenv/versions/3.11.14/bin', '/home/ironick/.pyenv/versions/3.11.14/lib/python311.zip', '/home/ironick/.pyenv/versions/3.11.14/lib/python3.11', '/home/ironick/.pyenv/versions/3.11.14/lib/python3.11/lib-dynload', '/home/ironick/.pyenv/versions/3.11.14/lib/python3.11/site-packages', '/home/ironick/.config/Thonny/plugins/lib/python3.11/site-packages']
+16:40:59.382 [MainThread] INFO    thonny: TIME/MODS 0.049 After loading Jedi (+121 modules)
+16:40:59.382 [MainThread] INFO    thonny: NEW MODS ['_blake2', '_compat_pickle', '_hashlib', '_json', '_pickle', '_sysconfigdata__linux_x86_64-linux-gnu', 'difflib', 'filecmp', 'gc', 'hashlib', 'importlib._abc', 'importlib.util', 'jedi', 'jedi._compatibility', 'jedi.api', 'jedi.api.classes', 'jedi.api.completion', 'jedi.api.completion_cache', 'jedi.api.environment', 'jedi.api.errors', 'jedi.api.exceptions', 'jedi.api.file_name', 'jedi.api.helpers', 'jedi.api.interpreter', 'jedi.api.keywords', 'jedi.api.project', 'jedi.api.refactoring', 'jedi.api.refactoring.extract', 'jedi.api.strings', 'jedi.cache', 'jedi.common', 'jedi.debug', 'jedi.file_io', 'jedi.inference', 'jedi.inference.analysis', 'jedi.inference.arguments', 'jedi.inference.base_value', 'jedi.inference.cache', 'jedi.inference.compiled', 'jedi.inference.compiled.access', 'jedi.inference.compiled.getattr_static', 'jedi.inference.compiled.mixed', 'jedi.inference.compiled.subprocess', 'jedi.inference.compiled.subprocess.functions', 'jedi.inference.compiled.value', 'jedi.inference.context', 'jedi.inference.docstring_utils', 'jedi.inference.docstrings', 'jedi.inference.filters', 'jedi.inference.flow_analysis', 'jedi.inference.gradual', 'jedi.inference.gradual.annotation', 'jedi.inference.gradual.base', 'jedi.inference.gradual.conversion', 'jedi.inference.gradual.generics', 'jedi.inference.gradual.stub_value', 'jedi.inference.gradual.type_var', 'jedi.inference.gradual.typeshed', 'jedi.inference.gradual.typing', 'jedi.inference.gradual.utils', 'jedi.inference.helpers', 'jedi.inference.imports', 'jedi.inference.lazy_value', 'jedi.inference.names', 'jedi.inference.param', 'jedi.inference.parser_cache', 'jedi.inference.recursion', 'jedi.inference.references', 'jedi.inference.signature', 'jedi.inference.syntax_tree', 'jedi.inference.sys_path', 'jedi.inference.utils', 'jedi.inference.value', 'jedi.inference.value.decorator', 'jedi.inference.value.dynamic_arrays', 'jedi.inference.value.function', 'jedi.inference.value.instance', 'jedi.inference.value.iterable', 'jedi.inference.value.klass', 'jedi.inference.value.module', 'jedi.inference.value.namespace', 'jedi.parser_utils', 'jedi.plugins', 'jedi.plugins.django', 'jedi.plugins.flask', 'jedi.plugins.pytest', 'jedi.plugins.registry', 'jedi.plugins.stdlib', 'jedi.settings', 'json', 'json.decoder', 'json.encoder', 'json.scanner', 'parso', 'parso._compatibility', 'parso.cache', 'parso.file_io', 'parso.grammar', 'parso.normalizer', 'parso.parser', 'parso.pgen2', 'parso.pgen2.generator', 'parso.pgen2.grammar_parser', 'parso.python', 'parso.python.diff', 'parso.python.errors', 'parso.python.parser', 'parso.python.pep8', 'parso.python.prefix', 'parso.python.token', 'parso.python.tokenize', 'parso.python.tree', 'parso.tree', 'parso.utils', 'pickle', 'pkgutil', 'pydoc', 'pydoc_data', 'pydoc_data.topics', 'sysconfig', 'zipfile']
+16:40:59.382 [MainThread] INFO    thonny: TIME/MODS 0.000 sent ready 
+16:40:59.382 [MainThread] INFO    thonny: TIME/MODS 0.000 Beginning of mainloop 
+16:40:59.479 [MainThread] INFO    thonny: TIME/MODS 0.097 before get_globals 
+16:40:59.480 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:40:59.484 [MainThread] INFO    thonny: TIME/MODS 0.004 affsubcode 
+16:40:59.497 [MainThread] INFO    thonny: TIME/MODS 0.013 affforw 
+16:40:59.497 [MainThread] INFO    thonny: TIME/MODS 0.000 after get_globals 
+16:41:00.616 [MainThread] INFO    thonny: TIME/MODS 1.119 before highlight_occurrences 
+16:41:00.736 [MainThread] INFO    thonny: TIME/MODS 0.120 after highlight_occurrences (+1 modules)
+16:41:00.736 [MainThread] INFO    thonny: NEW MODS ['thonny.jedi_utils']
+16:41:01.017 [MainThread] INFO    thonny: TIME/MODS 0.281 before highlight_occurrences 
+16:41:01.017 [MainThread] INFO    thonny: TIME/MODS 0.000 after highlight_occurrences 
+16:41:01.805 [MainThread] INFO    thonny: TIME/MODS 0.788 before Run 
+16:41:01.822 [MainThread] INFO    thonny: TIME/MODS 0.017 befsubcode 
+16:41:01.836 [MainThread] INFO    thonny: TIME/MODS 0.014 affsubcode 
+16:42:52.973 [MainThread] INFO    thonny: TIME/MODS 111.137 affforw 
+16:42:52.973 [MainThread] INFO    thonny: TIME/MODS 0.000 bef preparing helpers 
+16:42:52.973 [MainThread] INFO    thonny.plugins.micropython.mp_back: Preparing helpers
+16:42:52.973 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:42:52.996 [MainThread] INFO    thonny: TIME/MODS 0.023 affsubcode 
+16:42:53.012 [MainThread] INFO    thonny: TIME/MODS 0.015 affforw 
+16:42:53.012 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared helpers 
+16:42:53.012 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:42:53.014 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:42:53.025 [MainThread] INFO    thonny: TIME/MODS 0.011 affforw 
+16:42:53.025 [MainThread] INFO    thonny: TIME/MODS 0.000 got cwd 
+16:42:53.026 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:42:53.027 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:42:53.039 [MainThread] INFO    thonny: TIME/MODS 0.011 affforw 
+16:42:53.039 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared 
+16:42:53.039 [MainThread] INFO    thonny.plugins.micropython.mp_back: Prepared
+16:42:53.039 [MainThread] INFO    thonny: TIME/MODS 0.000 after Run 
+16:42:53.050 [MainThread] INFO    thonny: TIME/MODS 0.011 before get_dirs_children_info 
+16:42:53.050 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:42:53.059 [MainThread] INFO    thonny: TIME/MODS 0.009 affsubcode 
+16:42:53.080 [MainThread] INFO    thonny: TIME/MODS 0.022 affforw 
+16:42:53.081 [MainThread] INFO    thonny: TIME/MODS 0.000 after get_dirs_children_info 
+16:42:53.091 [MainThread] INFO    thonny: TIME/MODS 0.010 before get_globals 
+16:42:53.091 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:42:53.095 [MainThread] INFO    thonny: TIME/MODS 0.004 affsubcode 
+16:42:54.182 [MainThread] INFO    thonny: TIME/MODS 1.086 affforw 
+16:42:54.182 [MainThread] INFO    thonny: TIME/MODS 0.001 after get_globals 
+16:43:09.913 [MainThread] INFO    thonny: TIME/MODS 15.731 before highlight_occurrences 
+16:43:09.914 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:43:11.474 [MainThread] INFO    thonny: TIME/MODS 1.560 before highlight_occurrences 
+16:43:11.474 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:43:13.033 [MainThread] INFO    thonny: TIME/MODS 1.559 before highlight_occurrences 
+16:43:13.034 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:43:13.397 [MainThread] INFO    thonny: TIME/MODS 0.363 before highlight_occurrences 
+16:43:13.399 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:43:14.844 [MainThread] INFO    thonny: TIME/MODS 1.446 before highlight_occurrences 
+16:43:14.942 [MainThread] INFO    thonny: TIME/MODS 0.098 after highlight_occurrences (+1 modules)
+16:43:14.942 [MainThread] INFO    thonny: NEW MODS ['jedi.inference.finder']
+16:43:15.746 [MainThread] INFO    thonny: TIME/MODS 0.804 before highlight_occurrences 
+16:43:15.752 [MainThread] INFO    thonny: TIME/MODS 0.006 after highlight_occurrences 
+16:43:16.186 [MainThread] INFO    thonny: TIME/MODS 0.433 before highlight_occurrences 
+16:43:16.187 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:43:16.922 [MainThread] INFO    thonny: TIME/MODS 0.735 before highlight_occurrences 
+16:43:16.922 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:43:18.519 [MainThread] INFO    thonny: TIME/MODS 1.597 before highlight_occurrences 
+16:43:18.603 [MainThread] INFO    thonny: TIME/MODS 0.084 after highlight_occurrences 
+16:43:23.919 [MainThread] INFO    thonny: TIME/MODS 5.316 before highlight_occurrences 
+16:43:23.919 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:43:24.724 [MainThread] INFO    thonny: TIME/MODS 0.804 before Run 
+16:43:24.745 [MainThread] INFO    thonny: TIME/MODS 0.021 befsubcode 
+16:43:24.761 [MainThread] INFO    thonny: TIME/MODS 0.016 affsubcode 
+16:45:08.899 [MainThread] INFO    thonny: TIME/MODS 104.138 affforw 
+16:45:08.899 [MainThread] INFO    thonny: TIME/MODS 0.000 bef preparing helpers 
+16:45:08.899 [MainThread] INFO    thonny.plugins.micropython.mp_back: Preparing helpers
+16:45:08.900 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:45:08.923 [MainThread] INFO    thonny: TIME/MODS 0.024 affsubcode 
+16:45:08.939 [MainThread] INFO    thonny: TIME/MODS 0.016 affforw 
+16:45:08.939 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared helpers 
+16:45:08.939 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:45:08.941 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:45:08.952 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:45:08.953 [MainThread] INFO    thonny: TIME/MODS 0.000 got cwd 
+16:45:08.953 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:45:08.955 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:45:08.966 [MainThread] INFO    thonny: TIME/MODS 0.011 affforw 
+16:45:08.966 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared 
+16:45:08.966 [MainThread] INFO    thonny.plugins.micropython.mp_back: Prepared
+16:45:08.966 [MainThread] INFO    thonny: TIME/MODS 0.000 after Run 
+16:45:08.983 [MainThread] INFO    thonny: TIME/MODS 0.017 before get_globals 
+16:45:08.983 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:45:08.987 [MainThread] INFO    thonny: TIME/MODS 0.004 affsubcode 
+16:45:16.185 [MainThread] INFO    thonny: TIME/MODS 7.198 affforw 
+16:45:16.185 [MainThread] INFO    thonny: TIME/MODS 0.000 after get_globals 
+16:45:16.206 [MainThread] INFO    thonny: TIME/MODS 0.021 before highlight_occurrences 
+16:45:16.210 [MainThread] INFO    thonny: TIME/MODS 0.004 after highlight_occurrences 
+16:45:16.542 [MainThread] INFO    thonny: TIME/MODS 0.331 before highlight_occurrences 
+16:45:16.542 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:45:17.181 [MainThread] INFO    thonny: TIME/MODS 0.639 before highlight_occurrences 
+16:45:17.186 [MainThread] INFO    thonny: TIME/MODS 0.004 after highlight_occurrences 
+16:45:17.648 [MainThread] INFO    thonny: TIME/MODS 0.462 before highlight_occurrences 
+16:45:17.651 [MainThread] INFO    thonny: TIME/MODS 0.003 after highlight_occurrences 
+16:45:17.968 [MainThread] INFO    thonny: TIME/MODS 0.317 before highlight_occurrences 
+16:45:17.970 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:45:18.461 [MainThread] INFO    thonny: TIME/MODS 0.491 before highlight_occurrences 
+16:45:18.462 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:45:19.733 [MainThread] INFO    thonny: TIME/MODS 1.271 before Run 
+16:45:19.755 [MainThread] INFO    thonny: TIME/MODS 0.022 befsubcode 
+16:45:19.769 [MainThread] INFO    thonny: TIME/MODS 0.014 affsubcode 
+16:47:10.914 [MainThread] INFO    thonny: TIME/MODS 111.146 affforw 
+16:47:10.914 [MainThread] INFO    thonny: TIME/MODS 0.000 bef preparing helpers 
+16:47:10.915 [MainThread] INFO    thonny.plugins.micropython.mp_back: Preparing helpers
+16:47:10.915 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:10.939 [MainThread] INFO    thonny: TIME/MODS 0.024 affsubcode 
+16:47:10.954 [MainThread] INFO    thonny: TIME/MODS 0.015 affforw 
+16:47:10.954 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared helpers 
+16:47:10.954 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:10.956 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:47:10.967 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:47:10.967 [MainThread] INFO    thonny: TIME/MODS 0.000 got cwd 
+16:47:10.967 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:10.970 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:47:10.981 [MainThread] INFO    thonny: TIME/MODS 0.011 affforw 
+16:47:10.981 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared 
+16:47:10.981 [MainThread] INFO    thonny.plugins.micropython.mp_back: Prepared
+16:47:10.981 [MainThread] INFO    thonny: TIME/MODS 0.000 after Run 
+16:47:10.994 [MainThread] INFO    thonny: TIME/MODS 0.013 before get_globals 
+16:47:10.994 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:10.999 [MainThread] INFO    thonny: TIME/MODS 0.004 affsubcode 
+16:47:12.084 [MainThread] INFO    thonny: TIME/MODS 1.086 affforw 
+16:47:12.085 [MainThread] INFO    thonny: TIME/MODS 0.001 after get_globals 
+16:47:12.098 [MainThread] INFO    thonny: TIME/MODS 0.013 before highlight_occurrences 
+16:47:12.100 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:13.252 [MainThread] INFO    thonny: TIME/MODS 1.152 before highlight_occurrences 
+16:47:13.253 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:47:14.753 [MainThread] INFO    thonny: TIME/MODS 1.500 before highlight_occurrences 
+16:47:14.755 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:16.264 [MainThread] INFO    thonny: TIME/MODS 1.510 before highlight_occurrences 
+16:47:16.266 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:18.053 [MainThread] INFO    thonny: TIME/MODS 1.787 before highlight_occurrences 
+16:47:18.055 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:18.637 [MainThread] INFO    thonny: TIME/MODS 0.582 before highlight_occurrences 
+16:47:18.638 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:19.864 [MainThread] INFO    thonny: TIME/MODS 1.226 before highlight_occurrences 
+16:47:19.866 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:20.807 [MainThread] INFO    thonny: TIME/MODS 0.941 before highlight_occurrences 
+16:47:20.807 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:47:23.146 [MainThread] INFO    thonny: TIME/MODS 2.339 before highlight_occurrences 
+16:47:23.147 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:47:24.491 [MainThread] INFO    thonny: TIME/MODS 1.344 before highlight_occurrences 
+16:47:24.492 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:47:25.707 [MainThread] INFO    thonny: TIME/MODS 1.215 before read_file 
+16:47:25.707 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:25.710 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:47:25.722 [MainThread] INFO    thonny: TIME/MODS 0.013 affforw 
+16:47:25.722 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:25.725 [MainThread] INFO    thonny: TIME/MODS 0.003 affsubcode 
+16:47:25.740 [MainThread] INFO    thonny: TIME/MODS 0.014 affforw 
+16:47:25.740 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:25.742 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:47:25.753 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:47:25.754 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:25.756 [MainThread] INFO    thonny: TIME/MODS 0.003 affsubcode 
+16:47:25.767 [MainThread] INFO    thonny: TIME/MODS 0.011 affforw 
+16:47:25.768 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Read /main.py in 0.1 seconds
+16:47:25.768 [MainThread] INFO    thonny: TIME/MODS 0.000 after read_file 
+16:47:28.260 [MainThread] INFO    thonny: TIME/MODS 2.492 before highlight_occurrences 
+16:47:28.260 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:47:29.555 [MainThread] INFO    thonny: TIME/MODS 1.295 before highlight_occurrences 
+16:47:29.561 [MainThread] INFO    thonny: TIME/MODS 0.006 after highlight_occurrences 
+16:47:30.007 [MainThread] INFO    thonny: TIME/MODS 0.446 before write_file 
+16:47:30.007 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:30.015 [MainThread] INFO    thonny: TIME/MODS 0.007 affsubcode 
+16:47:30.032 [MainThread] INFO    thonny: TIME/MODS 0.017 affforw 
+16:47:30.032 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:30.035 [MainThread] INFO    thonny: TIME/MODS 0.003 affsubcode 
+16:47:30.047 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:47:30.047 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:30.052 [MainThread] INFO    thonny: TIME/MODS 0.004 affsubcode 
+16:47:30.064 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:47:30.064 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:30.071 [MainThread] INFO    thonny: TIME/MODS 0.007 affsubcode 
+16:47:30.090 [MainThread] INFO    thonny: TIME/MODS 0.019 affforw 
+16:47:30.090 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:30.092 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:47:30.103 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:47:30.103 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:30.107 [MainThread] INFO    thonny: TIME/MODS 0.004 affsubcode 
+16:47:30.119 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:47:30.119 [MainThread] INFO    thonny.plugins.micropython.bare_metal_backend: Wrote /main.py in 0.1 seconds
+16:47:30.119 [MainThread] INFO    thonny: TIME/MODS 0.000 after write_file 
+16:47:30.280 [MainThread] INFO    thonny: TIME/MODS 0.161 before get_dirs_children_info 
+16:47:30.280 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:47:30.289 [MainThread] INFO    thonny: TIME/MODS 0.008 affsubcode 
+16:47:30.310 [MainThread] INFO    thonny: TIME/MODS 0.021 affforw 
+16:47:30.310 [MainThread] INFO    thonny: TIME/MODS 0.000 after get_dirs_children_info 
+16:47:30.366 [MainThread] INFO    thonny: TIME/MODS 0.056 before highlight_occurrences 
+16:47:30.367 [MainThread] INFO    thonny: TIME/MODS 0.000 after highlight_occurrences 
+16:47:35.275 [MainThread] INFO    thonny: TIME/MODS 4.908 before highlight_occurrences 
+16:47:35.275 [MainThread] INFO    thonny: TIME/MODS 0.000 after highlight_occurrences 
+16:47:36.696 [MainThread] INFO    thonny: TIME/MODS 1.421 before highlight_occurrences 
+16:47:36.698 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:37.215 [MainThread] INFO    thonny: TIME/MODS 0.517 before highlight_occurrences 
+16:47:37.251 [MainThread] INFO    thonny: TIME/MODS 0.036 after highlight_occurrences 
+16:47:39.402 [MainThread] INFO    thonny: TIME/MODS 2.150 before highlight_occurrences 
+16:47:39.403 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:47:40.177 [MainThread] INFO    thonny: TIME/MODS 0.774 before highlight_occurrences 
+16:47:40.183 [MainThread] INFO    thonny: TIME/MODS 0.006 after highlight_occurrences 
+16:47:40.620 [MainThread] INFO    thonny: TIME/MODS 0.437 before highlight_occurrences 
+16:47:40.621 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:47:41.075 [MainThread] INFO    thonny: TIME/MODS 0.453 before highlight_occurrences 
+16:47:41.075 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:47:42.127 [MainThread] INFO    thonny: TIME/MODS 1.052 before Run 
+16:47:42.148 [MainThread] INFO    thonny: TIME/MODS 0.021 befsubcode 
+16:47:42.164 [MainThread] INFO    thonny: TIME/MODS 0.015 affsubcode 
+16:49:26.362 [MainThread] INFO    thonny: TIME/MODS 104.198 affforw 
+16:49:26.362 [MainThread] INFO    thonny: TIME/MODS 0.000 bef preparing helpers 
+16:49:26.362 [MainThread] INFO    thonny.plugins.micropython.mp_back: Preparing helpers
+16:49:26.362 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:49:26.386 [MainThread] INFO    thonny: TIME/MODS 0.024 affsubcode 
+16:49:26.402 [MainThread] INFO    thonny: TIME/MODS 0.016 affforw 
+16:49:26.402 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared helpers 
+16:49:26.402 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:49:26.404 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:49:26.416 [MainThread] INFO    thonny: TIME/MODS 0.012 affforw 
+16:49:26.416 [MainThread] INFO    thonny: TIME/MODS 0.000 got cwd 
+16:49:26.416 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:49:26.418 [MainThread] INFO    thonny: TIME/MODS 0.002 affsubcode 
+16:49:26.429 [MainThread] INFO    thonny: TIME/MODS 0.011 affforw 
+16:49:26.429 [MainThread] INFO    thonny: TIME/MODS 0.000 prepared 
+16:49:26.429 [MainThread] INFO    thonny.plugins.micropython.mp_back: Prepared
+16:49:26.429 [MainThread] INFO    thonny: TIME/MODS 0.000 after Run 
+16:49:26.434 [MainThread] INFO    thonny: TIME/MODS 0.005 before get_globals 
+16:49:26.435 [MainThread] INFO    thonny: TIME/MODS 0.000 befsubcode 
+16:49:26.439 [MainThread] INFO    thonny: TIME/MODS 0.004 affsubcode 
+16:49:33.634 [MainThread] INFO    thonny: TIME/MODS 7.195 affforw 
+16:49:33.634 [MainThread] INFO    thonny: TIME/MODS 0.000 after get_globals 
+16:49:33.639 [MainThread] INFO    thonny: TIME/MODS 0.005 before highlight_occurrences 
+16:49:33.640 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:49:34.068 [MainThread] INFO    thonny: TIME/MODS 0.428 before highlight_occurrences 
+16:49:34.069 [MainThread] INFO    thonny: TIME/MODS 0.002 after highlight_occurrences 
+16:49:34.903 [MainThread] INFO    thonny: TIME/MODS 0.833 before highlight_occurrences 
+16:49:34.903 [MainThread] INFO    thonny: TIME/MODS 0.001 after highlight_occurrences 
+16:49:37.162 [MainThread] INFO    thonny.plugins.micropython.connection: Detected connection error
+16:49:37.162 [MainThread] INFO    thonny.backend: Handling connection error
