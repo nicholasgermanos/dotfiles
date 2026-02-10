@@ -136,28 +136,28 @@ require("lazy").setup({
 
 	-- Quality of life things
 
-	{
-		"folke/snacks.nvim",
-		priority = 1000,
-		lazy = false,
-		---@type snacks.Config
-		opts = {
-			-- your configuration comes here
-			-- or leave it empty to use the default settings
-			-- refer to the configuration section below
-			bigfile = { enabled = true },
-			dashboard = { enabled = true },
-			explorer = { enabled = true },
-			input = { enabled = true },
-			picker = { enabled = true },
-			notifier = { enabled = true },
-			quickfile = { enabled = true },
-			scope = { enabled = true },
-			scroll = { enabled = false },
-			statuscolumn = { enabled = true },
-			words = { enabled = true },
-		},
-	},
+	-- {
+	-- 	"folke/snacks.nvim",
+	-- 	priority = 1000,
+	-- 	lazy = false,
+	-- 	---@type snacks.Config
+	-- 	opts = {
+	-- 		-- your configuration comes here
+	-- 		-- or leave it empty to use the default settings
+	-- 		-- refer to the configuration section below
+	-- 		bigfile = { enabled = true },
+	-- 		dashboard = { enabled = true },
+	-- 		explorer = { enabled = true },
+	-- 		input = { enabled = true },
+	-- 		picker = { enabled = true },
+	-- 		notifier = { enabled = true },
+	-- 		quickfile = { enabled = true },
+	-- 		scope = { enabled = true },
+	-- 		scroll = { enabled = false },
+	-- 		statuscolumn = { enabled = true },
+	-- 		words = { enabled = true },
+	-- 	},
+	-- },
 
 	-- Popup errors and things
 	{
@@ -198,22 +198,6 @@ require("lazy").setup({
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
-
-	-- Return to session when re opening
-	-- This breaks neo-tree
-
-	-- {
-	-- 	"rmagatti/auto-session",
-	-- 	lazy = false,
-	--
-	-- 	---enables autocomplete for opts
-	-- 	---@module "auto-session"
-	-- 	---@type AutoSession.Config
-	-- 	opts = {
-	-- 		suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
-	-- 		-- log_level = 'debug',
-	-- 	},
-	-- },
 
 	-- Keep cursor in middle of screen
 	{
@@ -672,12 +656,15 @@ require("lazy").setup({
 
 			for name, server in pairs(servers) do
 				server.capabilities = capabilities
-				require("lspconfig")[name].setup(server)
+				vim.lsp.config(name, server)
+				vim.lsp.enable({ name })
 			end
 		end,
 	},
 
-	{ -- Autoformat
+	-- Autoformat
+
+	{
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
 		cmd = { "ConformInfo" },
@@ -959,29 +946,6 @@ require("lazy").setup({
 		end,
 	},
 
-	-- AsynRun to let you run scripts in the background & see the output in a popup window
-	{
-		"skywind3000/asyncrun.vim",
-		config = function()
-			nnoremap("<leader>rs", "<cmd>AsyncStop<cr>", "[S]top AsyncRun background process")
-			nnoremap(
-				"<leader>rmi",
-				"<cmd>AsyncRun -mode=term ./../bin/mvn-clean-install-skiptests.sh<cr>",
-				"[R]un mvn-clean-install-skiptests.sh"
-			)
-			nnoremap(
-				"<leader>rw",
-				"<cmd>AsyncRun -mode=term -pos=TAB ./../bin/wealth-wildfly-start.sh<cr>",
-				"[R]un wealth-wildfly-start.sh"
-			)
-			nnoremap(
-				"<leader>rw",
-				"<cmd>AsyncRun -mode=term -pos=TAB ./../bin/wealth-wildfly-start.sh<cr>",
-				"[R]un wealth-wildfly-start.sh"
-			)
-		end,
-	},
-
 	{
 		"mfussenegger/nvim-dap",
 
@@ -991,10 +955,10 @@ require("lazy").setup({
 				opts = {},
 			},
 
-			{
-				"microsoft/vscode-js-debug",
-				build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
-			},
+			-- {
+			-- 	"microsoft/vscode-js-debug",
+			-- 	build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
+			-- },
 
 			{
 				"Joakker/lua-json5",
