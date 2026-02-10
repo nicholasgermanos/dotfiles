@@ -116,4 +116,3 @@ export WILDFLY_HOME="/Users/nickgermanos/wildfly-10.1.0.Final/"
 
 export PATH="$PATH:$HOME/bin"
 
-alias y="source yazi-cd"

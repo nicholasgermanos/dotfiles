@@ -136,28 +136,28 @@ require("lazy").setup({
 
 	-- Quality of life things
 
-	-- {
-	-- 	"folke/snacks.nvim",
-	-- 	priority = 1000,
-	-- 	lazy = false,
-	-- 	---@type snacks.Config
-	-- 	opts = {
-	-- 		-- your configuration comes here
-	-- 		-- or leave it empty to use the default settings
-	-- 		-- refer to the configuration section below
-	-- 		bigfile = { enabled = true },
-	-- 		dashboard = { enabled = true },
-	-- 		explorer = { enabled = true },
-	-- 		input = { enabled = true },
-	-- 		picker = { enabled = true },
-	-- 		notifier = { enabled = true },
-	-- 		quickfile = { enabled = true },
-	-- 		scope = { enabled = true },
-	-- 		scroll = { enabled = false },
-	-- 		statuscolumn = { enabled = true },
-	-- 		words = { enabled = true },
-	-- 	},
-	-- },
+	{
+		"folke/snacks.nvim",
+		priority = 1000,
+		lazy = false,
+		---@type snacks.Config
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+			bigfile = { enabled = true },
+			dashboard = { enabled = true },
+			explorer = { enabled = true },
+			input = { enabled = true },
+			picker = { enabled = true },
+			notifier = { enabled = true },
+			quickfile = { enabled = true },
+			scope = { enabled = true },
+			scroll = { enabled = false },
+			statuscolumn = { enabled = true },
+			words = { enabled = true },
+		},
+	},
 
 	-- Popup errors and things
 	{
@@ -836,16 +836,6 @@ require("lazy").setup({
 			nnoremap("<leader>jtc", "<Cmd>lua require'jdtls'.test_class()<CR>", "Test Class")
 			nnoremap("<leader>jtm", "<Cmd>lua require'jdtls'.test_nearest_method()<CR>", "Test Nearest Method")
 		end,
-	},
-
-	-- Helper eg make JPA Entities
-
-	{
-		"andreluisos/nvim-javagenie",
-		dependencies = {
-			"grapp-dev/nui-components.nvim",
-			"MunifTanjim/nui.nvim",
-		},
 	},
 
 	-- Git
