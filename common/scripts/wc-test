@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd $HOME/developer/ioof/wealth/
+eval "DEBUG_ON_FAIL=true mvn test -Pintegration-tests -pl test-wealthcheck -DrerunFailingTestsCount=0 -Dtest=$1#$2"

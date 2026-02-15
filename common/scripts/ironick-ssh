@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh -i .ssh/oracle-instance-ironick.key ubuntu@159.13.47.19
