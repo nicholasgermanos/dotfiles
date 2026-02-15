@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Shortcut to open neovim (nvim)
+
+nvim "$@"

@@ -1,6 +1,0 @@
-2026/02/01-13:10:33.400 4 Reusing MANIFEST /home/ironick/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
-2026/02/01-13:10:33.407 4 Recovering log #3
-2026/02/01-13:10:33.410 4 Reusing old log /home/ironick/.config/google-chrome/Default/Local Storage/leveldb/000003.log 
-2026/02/01-14:28:23.001 5 Level-0 table #5: started
-2026/02/01-14:28:23.008 5 Level-0 table #5: 62735 bytes OK
-2026/02/01-14:28:23.011 5 Delete type=0 #3
