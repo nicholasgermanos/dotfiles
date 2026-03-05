@@ -644,7 +644,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/ironick/Downloads/" />
+       path="/home/ironick/developer/e-ink-dashboard/assets/weather_icons/" />
     <group
        id="import"
        enable_preview="1"
@@ -1036,7 +1036,7 @@
      org.inkscape.output.png.inkscape.png_antialias="2" />
   <group
      id="desktop"
-     style="fill:#ff1515;text-orientation:auto;stroke:#ff0e1d;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:0">
+     style="fill:#000000;text-orientation:auto;stroke:#ff0e1d;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:0">
     <group
        width="1266"
        height="1378"

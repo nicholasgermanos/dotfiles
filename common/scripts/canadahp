@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ssh ironick@192.168.86.33

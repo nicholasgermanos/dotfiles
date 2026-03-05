@@ -20,3 +20,15 @@
 2026-02-01 00:58:43 Verifying hash & signature. Size= 8771203
 2026-02-01 00:58:43 Saving file
 2026-02-01 00:58:43 Update complete.
+2026-03-04 10:49:06 Loading updated app package /home/ironick/.config/obsidian/obsidian-1.11.5.asar
+2026-03-04 10:49:06 Checking for update using Github
+2026-03-04 10:49:06 Success.
+2026-03-04 10:49:06 Latest version is 1.12.4
+2026-03-04 10:49:06 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.4/obsidian-1.12.4.asar.gz
+2026-03-04 10:49:07 Verifying hash & signature. Size= 8322418
+2026-03-04 10:49:07 Saving file
+2026-03-04 10:49:07 Update complete.
+2026-03-04 11:49:06 Checking for update using Github
+2026-03-04 11:49:06 Success.
+2026-03-04 11:49:06 Latest version is 1.12.4
+2026-03-04 11:49:06 An update is already downloaded.
