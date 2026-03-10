@@ -73,7 +73,7 @@ automatically-unhide-macos-hidden-apps = false
 6 = 3
 7 = 3
 8 = 3
-9 = 3
+9 = 'built-in'
 0 = 'built-in'
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
