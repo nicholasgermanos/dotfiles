@@ -250,7 +250,7 @@ require("lazy").setup({
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function()
-			require("nvim-treesitter.config").setup({
+			require("nvim-treesitter.configs").setup({
 				ensure_installed = { "html", "javascript", "typescript", "vue" },
 				auto_install = true,
 				highlight = { enable = true },
