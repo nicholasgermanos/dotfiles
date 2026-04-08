@@ -250,8 +250,8 @@ require("lazy").setup({
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function()
-			require("nvim-treesitter.config").setup({
-				ensure_installed = { "html", "javascript", "typescript", "vue" },
+			require("nvim-treesitter.configs").setup({
+				ensure_installed = { "html", "javascript", "typescript", "vue", "markdown" },
 				auto_install = true,
 				highlight = { enable = true },
 			})
@@ -406,6 +406,129 @@ require("lazy").setup({
 			"saghen/blink.cmp",
 		},
 		config = function()
+			-- Add LSPs here - they will be automatically installed!
+			local servers = {
+
+				-- Vue 3
+				vtsls = {
+					filetypes = { "javascript", "typescript", "vue" },
+					settings = {
+						vtsls = {
+							tsserver = {
+								globalPlugins = {
+									{
+										name = "@vue/typescript-plugin",
+										location = vim.fn.stdpath("data")
+											.. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
+										languages = { "vue" },
+										configNamespace = "typescript",
+									},
+								},
+							},
+						},
+					},
+					on_attach = function(client, bufnr)
+						if vim.bo[bufnr].filetype == "vue" then
+							client.server_capabilities.semanticTokensProvider = nil
+						end
+					end,
+				},
+				vue_ls = {
+					on_init = function(client)
+						client.handlers["tsserver/request"] = function(_, result, context)
+							local clients = vim.lsp.get_clients({ bufnr = context.bufnr, name = "vtsls" })
+							if #clients == 0 then
+								vim.notify(
+									"Could not find `vtsls` lsp client, vue_lsp will not work without it!",
+									vim.log.levels.ERROR
+								)
+								return
+							end
+							local ts_client = clients[1]
+
+							local param = unpack(result)
+							local id, command, payload = unpack(param)
+							ts_client:exec_cmd({
+								title = "vue_request_forward", -- You can give title anything as it's used to represent a command in the UI, `:h Client:exec_cmd`
+								command = "typescript.tsserverRequest",
+								arguments = {
+									command,
+									payload,
+								},
+							}, { bufnr = context.bufnr }, function(_, r)
+								local response_data = { { id, r.body } }
+								---@diagnostic disable-next-line: param-type-mismatch
+								client:notify("tsserver/response", response_data)
+							end)
+						end
+					end,
+					settings = {
+						typescript = {
+							inlayHints = {
+								enumMemberValues = {
+									enabled = true,
+								},
+								functionLikeReturnTypes = {
+									enabled = true,
+								},
+								propertyDeclarationTypes = {
+									enabled = true,
+								},
+								parameterTypes = {
+									enabled = true,
+									suppressWhenArgumentMatchesName = true,
+								},
+								variableTypes = {
+									enabled = true,
+								},
+							},
+						},
+					},
+				},
+				lua_ls = {
+					settings = {
+						Lua = {
+							diagnostics = {
+								globals = {
+									"vim",
+									"bufnr",
+									"describe",
+									"it",
+									"before_each",
+									"after_each",
+									"packer_plugins",
+									"MiniTest",
+								},
+							},
+							completion = {
+								callSnippet = "Replace",
+							},
+						},
+					},
+				},
+				jedi_language_server = {},
+
+				-- basedpyright = {
+				-- 	settings = {
+				-- 		basedpyright = {
+				-- 			analysis = {
+				-- 				typeCheckingMode = "basic",
+				-- 			},
+				-- 		},
+				-- 	},
+				-- },
+				bacon_ls = {},
+				markdownlint = {},
+			}
+
+			for name, server in pairs(servers) do
+				-- passing config.capabilities to blink.cmp merges with the capabilities in your
+				-- `opts[server].capabilities, if you've defined it
+				server.capabilities = require("blink.cmp").get_lsp_capabilities(server.capabilities)
+				vim.lsp.config(name, server)
+				vim.lsp.enable({ name })
+			end
+
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
 				callback = function(event)
@@ -525,142 +648,6 @@ require("lazy").setup({
 					end,
 				},
 			})
-
-			-- LSP servers and clients are able to communicate to each other what features they support.
-			--  By default, Neovim doesn't support everything that is in the LSP specification.
-			--  When you add blink.cmp, luasnip, etc. Neovim now has *more* capabilities.
-			--  So, we create new capabilities with blink.cmp, and then broadcast that to the servers.
-			local capabilities = require("blink.cmp").get_lsp_capabilities()
-
-			-- Enable the following language servers
-			--  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
-			--
-			--  Add any additional override configuration in the following tables. Available keys are:
-			--  - cmd (table): Override the default command used to start the server
-			--  - filetypes (table): Override the default list of associated filetypes for the server
-			--  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
-			--  - settings (table): Override the default settings passed when initializing the server.
-			--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
-
-			local servers = {
-				-- Vue 3
-				vtsls = {
-					filetypes = { "javascript", "typescript", "vue" },
-					settings = {
-						vtsls = {
-							tsserver = {
-								globalPlugins = {
-									{
-										name = "@vue/typescript-plugin",
-										location = vim.fn.stdpath("data")
-											.. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
-										languages = { "vue" },
-										configNamespace = "typescript",
-									},
-								},
-							},
-						},
-					},
-					on_attach = function(client, bufnr)
-						if vim.bo[bufnr].filetype == "vue" then
-							client.server_capabilities.semanticTokensProvider = nil
-						end
-					end,
-				},
-				vue_ls = {
-					on_init = function(client)
-						client.handlers["tsserver/request"] = function(_, result, context)
-							local clients = vim.lsp.get_clients({ bufnr = context.bufnr, name = "vtsls" })
-							if #clients == 0 then
-								vim.notify(
-									"Could not find `vtsls` lsp client, vue_lsp will not work without it!",
-									vim.log.levels.ERROR
-								)
-								return
-							end
-							local ts_client = clients[1]
-
-							local param = unpack(result)
-							local id, command, payload = unpack(param)
-							ts_client:exec_cmd({
-								title = "vue_request_forward", -- You can give title anything as it's used to represent a command in the UI, `:h Client:exec_cmd`
-								command = "typescript.tsserverRequest",
-								arguments = {
-									command,
-									payload,
-								},
-							}, { bufnr = context.bufnr }, function(_, r)
-								local response_data = { { id, r.body } }
-								---@diagnostic disable-next-line: param-type-mismatch
-								client:notify("tsserver/response", response_data)
-							end)
-						end
-					end,
-					settings = {
-						typescript = {
-							inlayHints = {
-								enumMemberValues = {
-									enabled = true,
-								},
-								functionLikeReturnTypes = {
-									enabled = true,
-								},
-								propertyDeclarationTypes = {
-									enabled = true,
-								},
-								parameterTypes = {
-									enabled = true,
-									suppressWhenArgumentMatchesName = true,
-								},
-								variableTypes = {
-									enabled = true,
-								},
-							},
-						},
-					},
-				},
-				basedpyright = {
-					settings = {
-						basedpyright = {
-							analysis = {
-								typeCheckingMode = "basic",
-								autoSearchPaths = true,
-								useLibraryCodeForTypes = true,
-								diagnosticMode = "workspace",
-							},
-						},
-					},
-				},
-				lua_ls = {
-					settings = {
-						Lua = {
-							diagnostics = {
-								globals = {
-									"vim",
-									"bufnr",
-									"describe",
-									"it",
-									"before_each",
-									"after_each",
-									"packer_plugins",
-									"MiniTest",
-								},
-							},
-							completion = {
-								callSnippet = "Replace",
-							},
-						},
-					},
-				},
-				html = {},
-				eslint = {},
-			}
-
-			for name, server in pairs(servers) do
-				server.capabilities = capabilities
-				vim.lsp.config(name, server)
-				vim.lsp.enable({ name })
-			end
 		end,
 	},
 
@@ -703,6 +690,7 @@ require("lazy").setup({
 				html = { "prettierd" },
 				htmldjango = { "djlint" },
 				javascript = { "prettierd" },
+				rust = { "ast-grep" },
 			},
 		},
 	},
@@ -732,9 +720,6 @@ require("lazy").setup({
 			--    https://github.com/rafamadriz/friendly-snippets
 			{
 				"rafamadriz/friendly-snippets",
-				config = function()
-					require("luasnip.loaders.from_vscode").lazy_load()
-				end,
 			},
 
 			"folke/lazydev.nvim",
@@ -753,6 +738,15 @@ require("lazy").setup({
 			},
 			completion = {
 				documentation = { auto_show = false, auto_show_delay_ms = 500 },
+
+				menu = {
+					draw = {
+						columns = {
+							{ "label", "label_description", gap = 1 },
+							{ "kind_icon", "kind" },
+						},
+					},
+				},
 			},
 			sources = {
 				default = { "lsp", "path", "snippets", "lazydev" },
@@ -771,7 +765,7 @@ require("lazy").setup({
 							-- Default pointers define the lexical relations listed under each definition,
 							-- see Pointer Symbols below.
 							-- Default is as below ("antonyms", "similar to" and "also see").
-							pointer_symbols = { "!", "&", "^" },
+							definition_pointers = { "!", "&", "^" },
 						},
 					},
 
@@ -788,7 +782,7 @@ require("lazy").setup({
 							score_offset = 0,
 
 							-- See above
-							pointer_symbols = { "!", "&", "^" },
+							definition_pointers = { "!", "&", "^" },
 						},
 					},
 				},
@@ -798,7 +792,7 @@ require("lazy").setup({
 				},
 			},
 			snippets = { preset = "luasnip" },
-			fuzzy = { implementation = "lua" },
+			fuzzy = { implementation = "prefer_rust_with_warning" },
 			signature = { enabled = true },
 		},
 	},
