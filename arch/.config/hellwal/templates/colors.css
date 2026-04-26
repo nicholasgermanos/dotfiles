@@ -1,0 +1,36 @@
+:root {
+  --background: %%background%%;
+  --foreground: %%foreground%%;
+  --color0: %%color0.hex%%;
+  --color1: %%color1.hex%%;
+  --color2: %%color2.hex%%;
+  --color3: %%color3.hex%%;
+  --color4: %%color4.hex%%;
+  --color5: %%color5.hex%%;
+  --color6: %%color6.hex%%;
+  --color7: %%color7.hex%%;
+  --color8: %%color8.hex%%;
+  --color9: %%color9.hex%%;
+  --color10: %%color10.hex%%;
+  --color11: %%color11.hex%%;
+  --color12: %%color12.hex%%;
+  --color13: %%color13.hex%%;
+  --color14: %%color14.hex%%;
+  --color15: %%color15.hex%%;
+  --color0-rgb: %%color0.rgb%%;
+  --color1-rgb: %%color1.rgb%%;
+  --color2-rgb: %%color2.rgb%%;
+  --color3-rgb: %%color3.rgb%%;
+  --color4-rgb: %%color4.rgb%%;
+  --color5-rgb: %%color5.rgb%%;
+  --color6-rgb: %%color6.rgb%%;
+  --color7-rgb: %%color7.rgb%%;
+  --color8-rgb: %%color8.rgb%%;
+  --color9-rgb: %%color9.rgb%%;
+  --color10-rgb: %%color10.rgb%%;
+  --color11-rgb: %%color11.rgb%%;
+  --color12-rgb: %%color12.rgb%%;
+  --color13-rgb: %%color13.rgb%%;
+  --color14-rgb: %%color14.rgb%%;
+  --color15-rgb: %%color15.rgb%%;
+}

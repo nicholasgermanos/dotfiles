@@ -1,0 +1,93 @@
+{
+        "layer": "top",
+        "position": "top",
+        "reload_style_on_change": true,
+        "modules-left": ["niri/workspaces"],
+        "modules-center": ["clock#date", "clock#time"],
+        "modules-right": [
+			"cpu",
+			"memory",
+
+			"temperature",
+
+			"network",
+
+			"bluetooth"
+		],
+
+        "niri/workspaces": {
+            "format": "{icon}",
+            "format-icons": {
+                "active": "",
+                "default": "",
+                "empty": ""
+            },
+            "persistent-workspaces": {
+                "*": [ 1,2,3,4,5 ]
+            }
+        },
+        "clock#date": {
+            "format": "{:%A %B %Od} ",
+            "interval": 1,   
+			"tooltip": false,
+            "tooltip-format": "<tt>{calendar}</tt>",
+            "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "left",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+            "actions": {
+                "on-click-right": "shift_down",
+                "on-click": "shift_up"
+            }
+        },
+        "clock#time": {
+            "format": "{:%H:%M:%S}",
+            "interval": 1,   
+			"tooltip": false,
+        },
+        "network": {
+            "format-wifi": "<span font='24' rise='-2500' letter_spacing='12000'></span>{signalStrength}%",
+            "format-ethernet":"",
+            "format-disconnected": " No Internet",
+            "tooltip-format-ethernet": "{ifname} 🖧 ",
+			"tooltip-format-wifi": "{essid}",
+            "on-click": "kitty nmtui"
+        },
+        "bluetooth": {
+            "format-on": "󰂯",
+            "format-off": "BT-off",
+            "format-disabled": "󰂲",
+            "format-connected-battery": "<span letter_spacing='9000'>󰂯</span>{device_battery_percentage}%",
+            "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+            "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+            "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+            "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
+            "on-click": "kitty bluetui",
+        }, 
+
+		"cpu": {
+			"format": "<span font='24' rise='-2500' letter_spacing='9000'></span>{usage}%",
+			"on-click": "kitty btop",
+			"interval": 5,
+			"tooltip": true
+		},
+		"memory": {
+			"format": "<span font='24' rise='-2500' letter_spacing='9000'></span>{percentage}%",
+			"on-click": "kitty btop"
+		},
+		"temperature": {
+			"critical-threshold": 80,
+			"format": "<span font='20' rise='-500' letter_spacing='9000'></span>{temperatureC}°C",
+			"on-click": "kitty btop"
+		}
+} 
+

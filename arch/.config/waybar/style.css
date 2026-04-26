@@ -1,0 +1,114 @@
+@import url('../../.cache/hellwal/colors-waybar.css');
+
+* {
+    font-size:22px;
+    font-family: "FiraCode Nerd Font Mono";
+	font-weight: 600;
+}
+
+window#waybar{
+    all:unset;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    /* background: alpha(@foreground,.8); */
+}
+
+.modules-left,
+.modules-center,
+#cpu, #memory, #temperature, #network, #bluetooth {
+    margin:10px 10px 0px 10px;
+    padding:7px 10px;
+    background: alpha(@foreground,.9);
+    border-radius:10px;
+}
+
+#cpu, #memory, #temperature, #network, #bluetooth {
+	margin-left: 2px;
+}
+
+tooltip {
+    background:@background;
+    color: @color8;
+}
+
+#clock:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:@color8;
+}
+
+#custom-notification {
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color8;
+}
+
+#clock{
+    padding: 0px 5px;
+    color:@color8;
+    transition: all .3s ease;
+}
+
+#workspaces {
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+    color: alpha(@color8,.4);
+    transition: all .2s ease;
+}
+
+#workspaces button:hover {
+    color:rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+
+#workspaces button.active {
+    color: @color2;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+
+#workspaces button.empty {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+
+#workspaces button.empty.active {
+    color: @color8;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+
+#bluetooth{
+    padding: 0px 10px;
+    transition: all .3s ease;
+    color:@color8;
+}
+
+#network{
+    padding: 0px 10px;
+    transition: all .3s ease;
+    color:@color8;
+}
+
+#cpu,#memory,#temperature{
+    padding: 0px 10px;
+    transition: all .3s ease; 
+    color:@color8;
+    background: alpha(@foreground,.8);
+}
