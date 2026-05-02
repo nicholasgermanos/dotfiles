@@ -409,6 +409,15 @@ require("lazy").setup({
 			-- Add LSPs here - they will be automatically installed!
 			local servers = {
 
+				rust_analyzer = {
+					settings = {
+						["rust-analyzer"] = {
+							check = {
+								command = "clippy",
+							},
+						},
+					},
+				},
 				-- Vue 3
 				vtsls = {
 					filetypes = { "javascript", "typescript", "vue" },
@@ -517,7 +526,6 @@ require("lazy").setup({
 				-- 		},
 				-- 	},
 				-- },
-				bacon_ls = {},
 				markdownlint = {},
 			}
 
@@ -690,7 +698,7 @@ require("lazy").setup({
 				html = { "prettierd" },
 				htmldjango = { "djlint" },
 				javascript = { "prettierd" },
-				rust = { "ast-grep" },
+				rust = { "rust-analyzer" },
 			},
 		},
 	},
@@ -1258,6 +1266,11 @@ require("lazy").setup({
 -- (I put it at the bottom so if something goes wrong on init you KNOW something is wrong)
 --
 
-vim.cmd.colorscheme("catppuccin-frappe")
+local hellwal = vim.fn.expand("~/.cache/hellwal/colors-nvim.lua")
+if vim.fn.filereadable(hellwal) == 1 then
+	dofile(hellwal)
+else
+	vim.cmd.colorscheme("catppuccin-frappe")
+end
 
 require("slanted_gaps")
